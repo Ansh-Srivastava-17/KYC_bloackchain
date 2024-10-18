@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Management System</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Document Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" id="userLoginBtn">User Login</a></li>
+            <li><a href="#" id="orgLoginBtn">Organization Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="loginForms">
+            <!-- User Login Form -->
+            <div id="userLoginForm" class="form-container" style="display:none;">
+                <h2>User Login</h2>
+                <form id="userLogin">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Not registered? <a href="#" id="userRegisterLink">Register as User</a></p>
+            </div>
+
+            <!-- User Registration Form -->
+            <div id="userRegisterForm" class="form-container" style="display:none;">
+                <h2>User Registration</h2>
+                <form id="userRegister">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <!-- Organization Login Form -->
+            <div id="orgLoginForm" class="form-container" style="display:none;">
+                <h2>Organization Login</h2>
+                <form id="orgLogin">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+                <p>Not registered? <a href="#" id="orgRegisterLink">Register as Organization</a></p>
+            </div>
+
+            <!-- Organization Registration Form -->
+            <div id="orgRegisterForm" class="form-container" style="display:none;">
+                <h2>Organization Registration</h2>
+                <form id="orgRegister">
+                    <input type="text" name="name" placeholder="Organization Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
